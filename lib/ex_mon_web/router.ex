@@ -12,6 +12,8 @@ defmodule ExMonWeb.Router do
     delete "/trainers/:id", TrainersController, :delete
     get "/trainers/:id", TrainersController, :show
     put "/trainers/:id", TrainersController, :update
+
+    get "/pokemons/:name", PokemonsController, :show
   end
 
   # Enables LiveDashboard only for development
