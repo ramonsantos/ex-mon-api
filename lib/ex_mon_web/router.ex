@@ -9,6 +9,9 @@ defmodule ExMonWeb.Router do
     pipe_through :api
 
     post "/trainers", TrainersController, :create
+    delete "/trainers/:id", TrainersController, :delete
+    get "/trainers/:id", TrainersController, :show
+    put "/trainers/:id", TrainersController, :update
   end
 
   # Enables LiveDashboard only for development
