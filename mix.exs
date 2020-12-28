@@ -53,7 +53,8 @@ defmodule ExMon.MixProject do
       {:argon2_elixir, "~> 2.3"},
       {:tesla, "~> 1.4"},
       {:credo, "~> 1.5"},
-      {:excoveralls, "~> 0.10", only: :test}
+      {:excoveralls, "~> 0.10", only: :test},
+      {:guardian, "~> 2.1"}
     ]
   end
 
