@@ -14,6 +14,10 @@ defmodule ExMonWeb.Router do
     put "/trainers/:id", TrainersController, :update
 
     get "/pokemons/:name", PokemonsController, :show
+
+    resources("/trainer_pokemons", TrainerPokemonsController,
+      only: [:create, :show, :delete, :update]
+    )
   end
 
   # Enables LiveDashboard only for development
